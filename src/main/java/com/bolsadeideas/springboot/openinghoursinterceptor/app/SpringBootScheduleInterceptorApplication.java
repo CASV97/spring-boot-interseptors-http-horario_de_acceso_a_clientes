@@ -1,4 +1,4 @@
-package com.bolsadeideas.springboot.scheduleinterceptor.app;
+package com.bolsadeideas.springboot.openinghoursinterceptor.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

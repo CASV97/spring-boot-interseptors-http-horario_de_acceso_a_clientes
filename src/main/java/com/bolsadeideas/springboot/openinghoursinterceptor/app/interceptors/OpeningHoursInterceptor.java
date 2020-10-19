@@ -1,4 +1,4 @@
-package com.bolsadeideas.springboot.scheduleinterceptor.app.interceptors;
+package com.bolsadeideas.springboot.openinghoursinterceptor.app.interceptors;
 
 import java.util.Calendar;
 
@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-@Component
-public class ScheduleInterceptor implements HandlerInterceptor {
+@Component("openingHoursInterceptor")
+public class OpeningHoursInterceptor implements HandlerInterceptor {
 	@Value("${config.schedule.open}")
 	private Integer open;
 	@Value("${config.schedule.close}")

@@ -1,4 +1,4 @@
-package com.bolsadeideas.springboot.scheduleinterceptor.app.controllers;
+package com.bolsadeideas.springboot.openinghoursinterceptor.app.controllers;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
