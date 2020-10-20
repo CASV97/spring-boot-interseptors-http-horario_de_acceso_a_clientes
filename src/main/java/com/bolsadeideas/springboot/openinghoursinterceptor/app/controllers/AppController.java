@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class AppController {
-	@Value("${config.schedule.open}")
+	@Value("${config.openinghours.open}")
 	private Integer open;
-	@Value("${config.schedule.close}")
+	@Value("${config.openinghours.close}")
 	private Integer close;
 
 	// método de atencion del cliente, va a funcionar a travez de un rango de hora

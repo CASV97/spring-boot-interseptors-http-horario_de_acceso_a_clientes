@@ -12,9 +12,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Component("openingHoursInterceptor")
 public class OpeningHoursInterceptor implements HandlerInterceptor {
-	@Value("${config.schedule.open}")
+	@Value("${config.openinghours.open}")
 	private Integer open;
-	@Value("${config.schedule.close}")
+	@Value("${config.openinghours.close}")
 	private Integer close;
 
 	@Override
@@ -24,7 +24,7 @@ public class OpeningHoursInterceptor implements HandlerInterceptor {
 		Calendar calendar = Calendar.getInstance();
 		int hour = calendar.get(Calendar.HOUR_OF_DAY);
 		if (hour >= open && hour <= close) {
-			StringBuilder message = new StringBuilder("Wellcome to  opening hours for clients");
+			StringBuilder message = new StringBuilder("Wellcome to  open bussisness");
 			message.append(", we attend from ");
 			message.append(open);
 			message.append(" hrs. ");
