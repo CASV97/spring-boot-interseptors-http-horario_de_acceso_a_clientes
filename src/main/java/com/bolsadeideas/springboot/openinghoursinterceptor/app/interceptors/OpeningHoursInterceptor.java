@@ -46,7 +46,10 @@ public class OpeningHoursInterceptor implements HandlerInterceptor {
 	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {
 		String message = (String) request.getAttribute("message");
-		modelAndView.addObject("message", message);
+		if (modelAndView != null) {
+			modelAndView.addObject("message", message);
+
+		}
 	}
 
 }

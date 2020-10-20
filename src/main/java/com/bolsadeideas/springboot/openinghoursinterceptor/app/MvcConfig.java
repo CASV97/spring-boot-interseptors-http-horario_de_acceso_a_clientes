@@ -18,7 +18,7 @@ public class MvcConfig implements WebMvcConfigurer {
 
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
-		//
+		//hay que excluir la ruta o página de alternativa en caso de que esté fuera de horario por que no entraremos en un bucle infinito
 		registry.addInterceptor(openingHoursInterceptor).excludePathPatterns("/closed");
 	}
 
